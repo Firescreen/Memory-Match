@@ -9,13 +9,13 @@ public class MemoryMatch
         boolean printElement[]=new boolean[NUM_PAIRS*2+1];
         int temp,position1,position2,i;            
         int k=1;
-        for(i=1;i<=NUM_PAIRS*2;i+=2)
+        for(i=1;i<=NUM_PAIRS*2;i+=2)//creates cards
         {
             board[i]=k;
             board[i+1]=k;
             k++;
         }        
-        for(i=1;i<=1000;i++)
+        for(i=1;i<=1000;i++)/randomizes board
         {
             position1=(int)(Math.random()*(board.length-1)+1);
             position2=(int)(Math.random()*(board.length-1)+1);
