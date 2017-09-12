@@ -15,7 +15,7 @@ public class MemoryMatch
             board[i+1]=k;
             k++;
         }        
-        for(i=1;i<=1000;i++)/randomizes board
+        for(i=1;i<=1000;i++)//randomizes board
         {
             position1=(int)(Math.random()*(board.length-1)+1);
             position2=(int)(Math.random()*(board.length-1)+1);
